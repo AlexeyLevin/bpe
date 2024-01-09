@@ -1,0 +1,16 @@
+orchestrator:
+  step:
+    execution:
+      scheduler:
+        delay: "PT1S"
+        batch:
+          size: 100
+      pool:
+        size: 500
+      queue:
+        limit: 400
+        overload:
+          diff: 101
+logging:
+  level:
+    com.bpe: debug
